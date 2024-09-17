@@ -1,0 +1,170 @@
+/* styles.css */
+
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141C24;
+    color: #E0E0E0;
+}
+.header {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px 0px;
+}
+.image {
+    height: 49px;
+}
+.dropdown{
+    min-width: 15em;
+    position: relative;
+    margin: 2em;
+}
+
+.dropdown *{
+    box-sizing: border-box;
+}
+select{
+   background: #2a2f3b;
+   color: #fff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 2px #2a2f3b solid;
+   border-radius: 0.5em;
+   padding: 1em;
+   cursor: pointer;
+   transition: background 0.3s ;
+}
+.select-clicked{
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+.select:hover{
+    background: #323741;
+}
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+
+}
+.caret-rotate{
+
+}
+.menu{
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: -1;
+}
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+.menu li:hover{
+    
+}
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00FFD1;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1E2833;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #29323C;
+    color: #00FFD1;
+    font-size: 1rem;
+}
+
+td {
+    font-size: 0.9rem;
+}
+
+tr:nth-child(even) {
+    background-color: #1C252F;
+}
+
+tr:hover {
+    background-color: #2A3A4B;
+}
+
+table th:first-child, table td:first-child {
+    text-align: center;
+}
+
+td:nth-child(2) {
+    color: #FFD700; /* Gold color for the cryptocurrency name */
+}
+
+table thead th {
+    border-bottom: 2px solid #00FFD1;
+}
+
+table tbody tr td {
+    border-bottom: 1px solid #29323C;
+}
+
+/* Add padding to table */
+.container table {
+    margin-top: 20px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

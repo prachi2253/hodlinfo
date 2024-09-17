@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HodlInfo</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="header">
+        <div id="logo">
+            <a href="/"><img class="image" src="https://hodlinfo.com/static/media/HODLINFO.8f78fc06.png" alt=""></a>
+  
+          </div>
+          <div>
+            
+          </div>
+        <div>
+  
+        
+      </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Last Price</th>
+          <th>Buy Price</th>
+          <th>Sell Price</th>
+          <th>Volume</th>
+          <th>Base Unit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% cryptos.forEach((crypto,index) => { %>
+          <tr>
+            <td><%= index + 1 %></td>
+            <td><%= crypto.name %></td>
+            <td><%= crypto.last %></td>
+            <td><%= crypto.buy %></td>
+            <td><%= crypto.sell %></td>
+            <td><%= crypto.volume %></td>
+            <td><%= crypto.base_unit %></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
